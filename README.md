@@ -8,7 +8,7 @@ Specifying genes of interest (max size = 1024 bp) and tissues of interest (among
 
 ## Data requirement
 
-Follow the [import.ipynb](https://github.com/ckergal/BLIMP/blob/main/import.ipynb) to get models files.
+Follow the [import.ipynb](https://github.com/ckergal/BLIMP/blob/main/import.ipynb) to get prediciton models files.
 
 ## Installation
 
@@ -21,3 +21,5 @@ For specific scripts used to predict impacting mutations :
 
 git clone https://github.com/ckergal/BLIMP
 ```
+
+

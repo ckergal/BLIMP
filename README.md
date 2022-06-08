@@ -12,9 +12,10 @@ Follow the [import.ipynb](https://github.com/ckergal/BLIMP/blob/main/import.ipyn
 
 ## Installation
 
-See `basenji` tutorial for the general installation:  <https://github.com/calico/basenji#installation>
+See `basenji` tutorial for the general installation, dataset creation and model training:  <https://github.com/calico/basenji#installation>
 
-For specific scripts used to create dog dataset, train the model and predict impacting mutations :
+
+For specific scripts used to predict impacting mutations :
 
 ```bash
 

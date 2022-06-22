@@ -1,15 +1,17 @@
 # Directory storing all informations for Camille Kergal et al. manuscript
 
-For most of the analyses, the dog reference genome was `canFam4` and the human reference genome was `GRCh38`.
+For most of the analyses, the human reference genome was `GRCh38` and the dog reference genome was `canFam4` and `canFam3`.
 
 The structure of this repository is as following:
-
 
 - `input_data` : data files used in the manuscript:
   - `coordinates/` : important files in `.bed`
     - `cf3_cancer_1024prom.bed` : files of the 1,332 promoters of the cancer gene panel on canFam3 genome assembly.
     - `cf4_cancer_1024prom.bed` : files of the 1,332 promoters of the cancer gene panel on canFam4 genome assembly.
+    - `GRCh38_cancer_2014prom.bed` : files of human promoters of cancer genes on GRCh38.
     - `human_dog_8x1024_dog.fa.primAlign.blastId.Target.blastId.bed12` : conservation analysis of canine promoters on human genome as given by the script `../../script/cons_prom_minimap.sh`.
-  - `models/` : dog models of gene expression prediction
+  - `models/` : dog models of gene expression prediction for canFam3 and canFam4 with `.json` for NN architecture and `.txt` for correspondance with tissue files.
+    - `canFam4.h5` = can be reached here <http://tools.genouest.org/data/tderrien/cf4_pred_model.h5>
+    - `canFam3.h5` = can be reached here <http://tools.genouest.org/data/tderrien/cf3_pred_model.h5>
 - `scripts` = scripts to generate figures/data of the paper
   - `cons_prom_minimap.sh` : shel script using minimap2/bedtools to anlayze conservation of dog promoters sequences on the human genome (output file is `../input_data/coordinates/human_dog_8x1024_dog.fa.primAlign.blastId.Target.blastId.bed12`)

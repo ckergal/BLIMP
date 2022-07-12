@@ -1,0 +1,20 @@
+index	identifier	file	clip	sum_stat	description
+0	0	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00216.BC15.bw	384	sum	Corpus callosum
+1	1	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00117.BC01.bw	384	sum	Skin
+2	4	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00118.BC02.bw	384	sum	Uterus
+3	15	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00201.BC02.bw	384	sum	Spleen
+4	19	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00201.BC12.bw	384	sum	Adrenal gland
+5	20	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00201.BC13.bw	384	sum	Bone marrow
+6	21	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00202.BC02.bw	384	sum	Testis
+7	25	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00202.BC10.bw	384	sum	Pancreas
+8	28	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00202.BC15.bw	384	sum	Lung
+9	29	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00203.BC02.bw	384	sum	Colon
+10	35	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00204.BC02.bw	384	sum	Thalamus
+11	39	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00204.BC10.bw	384	sum	Liver
+12	41	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00204.BC15.bw	384	sum	Ovary
+13	44	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00205.BC05.bw	384	sum	Skeletal muscle
+14	45	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00205.BC08.bw	384	sum	Prostate gland
+15	46	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00205.BC12.bw	384	sum	Thyroid gland
+16	50	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00206.BC05.bw	384	sum	Retina
+17	62	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00208.BC08.bw	384	sum	Trachea
+18	70	/groups/dog/data/canFam4/NGS/CAGE_DoGA/BW/CAGE_L_00210.BC02.bw	384	sum	Kidney

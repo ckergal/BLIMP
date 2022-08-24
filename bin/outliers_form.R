@@ -11,11 +11,10 @@ library(stringr)
 # Options -----------------------------------------------------------------
 args = commandArgs(TRUE)
 
-dog_out_file = args[1]
-min_sd = args[2]
-out_dir = args[3]
-# min_sd = 8
-# out_dir = "~/outliers_results/output"
+min_sd = args[1]
+out_dir = args[2]
+
+
 
 
 # Style -------------------------------------------------------------------

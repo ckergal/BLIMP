@@ -6,9 +6,8 @@ The structure of this repository is as following:
 
 - `input_data` : data files used in the manuscript:
   - `coordinates/` : important files in `.bed`
-    - `cf3_cancer_1024prom.bed` : files of the 1,332 promoters of the cancer gene panel on canFam3 genome assembly.
-    - `cf4_cancer_1024prom.bed` : files of the 1,332 promoters of the cancer gene panel on canFam4 genome assembly.
-    - `GRCh38_cancer_2014prom.bed` : files of human promoters of cancer genes on GRCh38.
+    - `orthologous_cancer_genes.bed` : files of the 1,317 promoters of the orthologous cancer genes panel on canFam4 and GRCh38 genomes assembles.
+    Columns of this file describe : Gene NAME, coordinates on dog genome (D prefix) and coordinates on human genome (H prefix).
   - `models/` : dog models of gene expression prediction for canFam3 and canFam4 with `.json` for NN architecture and `.txt` for correspondance with tissue files.
     - `canFam4.h5` = can be reached here <http://tools.genouest.org/data/tderrien/cf4_pred_model.h5>
     - `canFam3.h5` = can be reached here <http://tools.genouest.org/data/tderrien/cf3_pred_model.h5>

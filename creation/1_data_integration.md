@@ -1,10 +1,10 @@
-## Data integration
+# Data integration
 
 The first step to establish prediction model is the data integration. The Basenji framework consists in joining transcriptomics CAGE profiles to a reference genome.
 As CAGE profiles are in a `.bam` format, the use of Basenji requires a conversion into BigWig format. This can be done with the next command line, applied on all CAGE profiles you want to integrate into your prediction model.
 
 
-### Scripts
+## Scripts
 
 
 ```
@@ -35,7 +35,7 @@ data/targets.txt
 `-d`is the genome part you want to use (here 100%) and `-l` is the sequence length. `-t` and `-v` are the part of test and validation set respectively and `-w` represents the window size of base pairs aggregation. `-c` is a cropping factor and `-o` is the directory where output files are generated. The first argument is the genome Fasta file and the second argument is a text file specifying BigWig files to integrate, as presented [here](https://github.com/ckergal/BLIMP/blob/main/manuscript/input_data/models/cf4_targets.txt).
 
 
-### Output
+## Output
 
 Then, in the directory **cf4_basenji_data** you have different files and sub-directories. The file `contigs.bed` contains genomic regions (contigs) in which sequences of length `-l` are picked and `sequences.bed` contains genomic coordinates of 131kb sequences, with their distribution between train, validation and test sets. The file `targets.txt` is diplicated here and the file `statistics.json` contains informations about this data integration step.
 

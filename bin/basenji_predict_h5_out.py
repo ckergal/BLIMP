@@ -25,7 +25,7 @@ from corgi import stream
 from corgi import dataset
 
 '''
-basenji_predict_test.py
+basenji_predict_h5_out.py
 '''
 
 ################################################################################

@@ -6,9 +6,9 @@ When data integration is achieved, the second step consists in training the pred
 ## Script
 ```shell
 basenji_train.py \
--o models/cf4_basenji_train \
-models/cf4_params.json \
-data/cf4_basenji_data
+  -o models/cf4_basenji_train \
+  models/cf4_params.json \
+  data/cf4_basenji_data
 ```
 
 `-o` parameter allows to create the output directory. The first argument is the file of hyperparamters and the second one is the path to the data directory.

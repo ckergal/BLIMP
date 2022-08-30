@@ -151,3 +151,27 @@ basenji_sat.py \
 
 Element specified with `-f` option is the genome FASTA file you want to extract reference alleles and `-o` allows to create the output folder. `-l` is to precise the length of genomic sequences of interest and
 `-t` is the text file specifying CAGE samples of interest. You can select fewer than those composing the model.
+
+
+
+**Output**
+
+The output of this step is a file named *scores.h5*. This format is totally suitable to store the result of *in silico* saturated mutagenesis. It gives predictions of impact of `-l` possible mutations from the number of regions described in `.bed` file in the different tissues presented in `-t` options.
+
+
+### Impacting variants detection
+In order to detect impacting mutations from the set resulting from the saturated mutagenesis, we established a method implemented in Python. The aim is to detect outliers from the dataset that we then count as the most impating variants. We also propose a more user-friendly output format.
+
+
+**Script**
+```
+outliers.py \
+  --sd 4 \
+  output/sat_mut/scores.h5
+```
+
+`--sd` allows to precise the value of standard deviation distance we want to assign to choose impacting variants and the argument corresponds to the path to the `scores.h5` file from the saturated mutagenesis. 
+
+
+**Output**
+Results are stored in `outliers.tsv` file

@@ -174,4 +174,5 @@ outliers.py \
 
 
 **Output**
+
 Results are stored in `outliers.tsv` file

@@ -32,7 +32,7 @@ curl -o BLIMP/manuscript/input_data/models/cf3_pred_model.h5 \
 
 Otherwise, you can train a prediciton model of gene expression with your own CAGE data following different steps :
 
-### 1. Data Integration
+#### 1. Data Integration
 <details>
 <summary> 
 <i>Click to see instructions.</i>
@@ -40,7 +40,7 @@ Otherwise, you can train a prediciton model of gene expression with your own CAG
 
 The first step to establish prediction model is the data integration. The Basenji framework consists in joining transcriptomics CAGE profiles to a reference genome. As CAGE profiles are in a `.bam` format, the use of Basenji requires a conversion into BigWig format. This can be done with the next command line, applied on all CAGE profiles you want to integrate into your prediction model. 
   
-#### Scripts 
+##### Scripts 
 ```
 bam_cov.py \
   -o CAGE/BW/ \
@@ -66,7 +66,7 @@ basenji_data.py \
 `-d`is the genome part you want to use (here 100%) and `-l` is the sequence length. `-t` and `-v` are the part of test and validation set respectively and `-w` represents the window size of base pairs aggregation. `-c` is a cropping factor and `-o` is the directory where output files are generated. The first argument is the genome Fasta file and the second argument is a text file specifying BigWig files to integrate, as presented [here](https://github.com/ckergal/BLIMP/blob/main/manuscript/input_data/models/cf4_targets.txt).
 
 
-#### Output
+##### Output
 
 Then, in the directory **cf4_basenji_data** you have different files and sub-directories. The file `contigs.bed` contains genomic regions (contigs) in which sequences of length `-l` are picked and `sequences.bed` contains genomic coordinates of 131kb sequences, with their distribution between train, validation and test sets. The file `targets.txt` is diplicated here and the file `statistics.json` contains informations about this data integration step.
 
@@ -78,13 +78,13 @@ The folder **tfrecords** contains `.err` and `.tfr` files. Hopefully `.err` file
 
 </details>
 
-### 2. Model Training
+#### 2. Model Training
 <details>
 <summary> <i>Click to see instructions</i> </summary>
 When data integration is achieved, the second step consists in training the prediction model of gene expression. The algorithm learns with the training data set and assessment during training is established on the validation data set. A model obtained during an epoch is used to predict expression level of genomic sequences from the validation set and predictions are compared to the real expression level with a Pearson correlation coefficient. Sothe aim is to maximize this value.
 
 
-#### Script
+##### Script
 ```shell
 basenji_train.py \
   -o models/cf4_basenji_train \
@@ -95,11 +95,11 @@ basenji_train.py \
 `-o` parameter allows to create the output directory. The first argument is the file of hyperparamters and the second one is the path to the data directory.
 
 
-#### Output
+##### Output
 The folder **cf4_basenji_train** contains the file `params.json`, duplicating the one in argument. `model_check.h5` saves the model corresponding to the last epoch and `model_best.h5` corresponds to the model leading to the best correlation coefficient.
 </details>
 
-### 3. Model Test
+#### 3. Model Test
 <details>
 <summary> 
 <i>Click to see instructions</i>
@@ -108,7 +108,7 @@ The folder **cf4_basenji_train** contains the file `params.json`, duplicating th
 The last step to completely train a prediction model consists in assessing it. As with the validation data set, it's about predicting the expression level of genomic sequences from the test data set and comparing predictions with real data calculating a Pearson correlation coefficient.
 
 
-#### Script
+##### Script
 ```
 basenji_test.py \
   -o output/cf4_basenji_test \
@@ -122,7 +122,7 @@ basenji_test.py \
 
 
 
-#### Output
+##### Output
 In the folder indicated as output, here **cf4_basenji_test**, you can find a file called `acc.txt`. It lists Pearson correlation coefficients between predited expression level and the real one for test sequences in each CAGE samples composing the model.
 </details>
 

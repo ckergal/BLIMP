@@ -7,7 +7,18 @@ Specifying genomic regions of interest (max size = 1024 bp) and tissues of inter
 
 ## Data requirement
 
-Follow the [import.ipynb](https://github.com/ckergal/BLIMP/blob/main/import.ipynb) to get prediciton models files.
+Python script to get model files
+
+```python
+import os, subprocess
+
+if not os.path.isfile('BLIMP/input_data/models/cf4_pred_model.h5'):
+  subprocess.call('curl -o BLIMP/manuscript/input_data/models/cf4_pred_model.h5 http://tools.genouest.org/data/tderrien/cf4_pred_model.h5', shell=True)
+  
+if not os.path.isfile('BLIMP/input_data/models/cf4_pred_model.h5'):
+  subprocess.call('curl -o BLIMP/manuscript/input_data/models/cf3_pred_model.h5 http://tools.genouest.org/data/tderrien/cf3_pred_model.h5', shell=True)
+```
+
 
 ## Installation
 

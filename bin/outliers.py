@@ -15,10 +15,10 @@ def main():
 	parser = OptionParser(usage)
 	parser.add_option('-t', dest = "tissues",
 		default = None, type = int,
-		help = "Coma-separated list of target indexes")
+		help = "Number of target indexes")
 	parser.add_option('-g', dest = "genes",
 		default = None, type = int,
-		help = "Coma-separated list of target genes")
+		help = "Number of target genes")
 	parser.add_option('-o', dest = "out_dir",
 		default = "outliers_results")
 	parser.add_option('-n', dest = "name",

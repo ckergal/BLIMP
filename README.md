@@ -21,4 +21,5 @@ For specific scripts used to predict impacting mutations :
 git clone https://github.com/ckergal/BLIMP
 ```
 
+## Usage
 

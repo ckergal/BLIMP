@@ -83,7 +83,7 @@ The folder **tfrecords** contains `.err` and `.tfr` files. Hopefully `.err` file
 
 #### 2. Model Training
 <details>
-<summary> <i>Click to see instructions</i> </summary>
+<summary> <i>Click to see instructions.</i> </summary>
 
 When data integration is achieved, the second step consists in training the prediction model of gene expression. The algorithm learns with the training data set and assessment during training is established on the validation data set. A model obtained during an epoch is used to predict expression level of genomic sequences from the validation set and predictions are compared to the real expression level with a Pearson correlation coefficient. Sothe aim is to maximize this value.
 
@@ -106,7 +106,7 @@ The folder **cf4_basenji_train** contains the file `params.json`, duplicating th
 #### 3. Model Test
 <details>
 <summary> 
-<i>Click to see instructions</i>
+<i>Click to see instructions.</i>
 </summary>
 
 The last step to completely train a prediction model consists in assessing it. As with the validation data set, it's about predicting the expression level of genomic sequences from the test data set and comparing predictions with real data calculating a Pearson correlation coefficient.

@@ -5,6 +5,8 @@ Based on the [Basenji](https://github.com/calico/basenji) tool suite, we propose
 
 Specifying genomic regions of interest (max size = 1024 bp) and tissues of interest (among those composing prediciton models), you can obtain predicitons impact of all possible mutations on gene expression.
 
+In order to evaluate our prediction model, we redesigned some Basenji scripts to realise and assess cross-species and within-species predictions. This process is presented [here](https://github.com/ckergal/BLIMP/blob/main/bin/README.md).
+
 
 ## Installation
 

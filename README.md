@@ -175,4 +175,4 @@ outliers.py \
 
 **Output**
 
-Results are stored in `outliers.tsv` file
+Results are stored in `outliers.tsv` file. Each line describes a mutation predicted as impacting gene expression. We find the genomic location and gene name, reference and mutate allele, differential expression level implied (`outlier`). `Distance` column indicates how impacting is the mmutation, in the sens of standard deviation distance from the mean of the set. We also inform about the tissue where the mutation occurs as impacting and how far from the TSS it is.

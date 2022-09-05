@@ -29,4 +29,5 @@ The option `-o` is the path where you want to find outputs. `-t` is the `targets
 `basenji_predict_par.py` calls `basenji_predict_h5_out.py` and allows to parallelise predictions. It's usefull if you want to predict expression level of more than ~50 genomic sequences, otherwise you can just use `basenji_predict_h5_out.py`
 
 ### Output
+As output you obtain the file `results.tsv`. In our case, it contains expression level of canine genomic sequences of 1024 bp (in `dog.bed`) predicted by the human prediciton model in tissues specified in `targets_human.txt` file.
 

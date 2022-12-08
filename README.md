@@ -1,3 +1,5 @@
+![Logo BLIMP](./logo-BLIMP.png)
+
 # BLIMP : Basenji Like IMpacting variants Predictor
 
 Based on the [Basenji](https://github.com/calico/basenji) tool suite, we propose :
